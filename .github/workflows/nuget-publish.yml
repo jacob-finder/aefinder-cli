@@ -33,7 +33,7 @@ jobs:
       run: dotnet build --configuration Release --no-restore
 
     - name: Pack the NuGet package
-      run: dotnet pack --configuration Release --no-build --output ./nupkg --version ${{ env.VERSION }}
+      run: dotnet pack --configuration Release --no-build --output ./nupkg -p:PackageVersion=${{ env.VERSION }}
 
     - name: Publish the NuGet package
       env:
