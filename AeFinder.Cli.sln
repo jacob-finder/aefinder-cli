@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{951256B1-01BA-4BB0-B066-0F58F2B7D50C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AeFinder.Cli", "src\AeFinder.Cli\AeFinder.Cli.csproj", "{2B2A3975-667E-40B5-9819-E375559D9626}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AeFinder.Cli.Core", "src\AeFinder.Cli.Core\AeFinder.Cli.Core.csproj", "{EA636516-5627-4DC7-9CF6-785B48C346D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B2A3975-667E-40B5-9819-E375559D9626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B2A3975-667E-40B5-9819-E375559D9626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B2A3975-667E-40B5-9819-E375559D9626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B2A3975-667E-40B5-9819-E375559D9626}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA636516-5627-4DC7-9CF6-785B48C346D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA636516-5627-4DC7-9CF6-785B48C346D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA636516-5627-4DC7-9CF6-785B48C346D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA636516-5627-4DC7-9CF6-785B48C346D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2B2A3975-667E-40B5-9819-E375559D9626} = {951256B1-01BA-4BB0-B066-0F58F2B7D50C}
+		{EA636516-5627-4DC7-9CF6-785B48C346D3} = {951256B1-01BA-4BB0-B066-0F58F2B7D50C}
+	EndGlobalSection
+EndGlobal
