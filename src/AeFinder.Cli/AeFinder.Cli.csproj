@@ -4,7 +4,7 @@
         <OutputType>Exe</OutputType>
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
-        <PackageId>AeFinder.Cli</PackageId>
+        <PackageId>Test.AeFinder.Cli</PackageId>
         <ToolCommandName>aefinder</ToolCommandName>
         <PackAsTool>true</PackAsTool>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
