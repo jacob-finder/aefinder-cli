@@ -34,7 +34,7 @@ public class DevelopmentTemplateAppService : IDevelopmentTemplateAppService, ITr
         _remoteServiceExceptionHandler = remoteServiceExceptionHandler;
     }
 
-    public async Task CreatePrjectAsync(InitAppOptions options)
+    public async Task CreateProjectAsync(InitAppOptions options)
     {
         _logger.LogInformation("Initialize app...");
         

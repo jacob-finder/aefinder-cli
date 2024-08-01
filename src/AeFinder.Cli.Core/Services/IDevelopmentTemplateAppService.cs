@@ -4,5 +4,5 @@ namespace AeFinder.Cli.Services;
 
 public interface IDevelopmentTemplateAppService
 {
-    Task CreatePrjectAsync(InitAppOptions options);
+    Task CreateProjectAsync(InitAppOptions options);
 }

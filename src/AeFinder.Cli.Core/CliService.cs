@@ -45,7 +45,7 @@ public class CliService : ITransientDependency
         switch (obj)
         {
             case InitAppOptions options:
-                await _developmentTemplateAppService.CreatePrjectAsync(options);
+                await _developmentTemplateAppService.CreateProjectAsync(options);
                 break;
             case DeployAppOptions options:
                 await _appService.DeployAsync(options);
