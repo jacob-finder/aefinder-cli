@@ -21,4 +21,4 @@ jobs:
         run: echo "VERSION=$(echo ${{ env.BRANCH_NAME }} | sed -e 's/release\/v//')" >> $GITHUB_ENV
 
       - name: Print version number
-        run: echo "Extracted version number: ${{ env.VERSION }}"
+        run: echo "Extracted version number ${{ env.VERSION }}"
