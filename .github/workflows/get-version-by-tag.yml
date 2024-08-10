@@ -1,0 +1,22 @@
+name: Extract Version Number
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  extract-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Get the version from git tags
+        run: |
+          TAG=$(git describe --tags --abbrev=0)
+          VERSION=${TAG#v}
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+
+      - name: Print version number
+        run: echo "Extracted version number ${{ env.VERSION }}"
