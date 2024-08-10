@@ -1,0 +1,24 @@
+name: Extract Version Number
+
+on:
+  push:
+    branches:
+      - 'release/*'
+
+jobs:
+  extract-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Get current branch name
+        id: get_branch
+        run: echo "BRANCH_NAME=$(echo ${GITHUB_REF#refs/heads/})" >> $GITHUB_ENV
+
+      - name: Extract version number from branch name
+        id: extract_version
+        run: echo "VERSION=$(echo ${{ env.BRANCH_NAME }} | sed -e 's/release\/v//')" >> $GITHUB_ENV
+
+      - name: Print version number
+        run: echo "Extracted version number: ${{ env.VERSION }}"
