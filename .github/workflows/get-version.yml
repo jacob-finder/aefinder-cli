@@ -18,7 +18,7 @@ jobs:
 
       - name: Extract version number from branch name
         id: extract_version
-        run: echo "VERSION=${branch_name#release/}" >> $GITHUB_ENV
+        run: echo "VERSION=${BRANCH_NAME#release/}" >> $GITHUB_ENV
 
       - name: Print version number
         run: echo "Extracted version number ${{ env.VERSION }}"
